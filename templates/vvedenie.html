@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title %}
+Курс
+{% endblock %}
+{% block content %}
+<h1 class="text-center">Курс по параметрическим уравнениям</h1>
+<div class="p-4 container">
+    <div class="row">
+    <div class="col">
+        <div class="card border-warning">
+            <div class="card-body text-center">
+                <h3 class="position-relative text-center fw-bold">Линейные конструкции</h3>
+                <img class="MMImage-Origin" src="https://img.freepik.com/premium-vector/worried-upset-teen-student-on-exam_53562-3257.jpg?size=338&amp;ext=jpg">
+                <a href="{% url 'teoria' %}" class="btn btn-warning"><h5>Смотреть курс</h5></a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card border-warning">
+            <div class="card-body text-center">
+                <h3 class="position-relative text-center fw-bold">Квадратные конструкции</h3>
+                <img class="MMImage-Origin" src="https://img.freepik.com/premium-vector/worried-upset-teen-student-on-exam_53562-3257.jpg?size=338&amp;ext=jpg">
+                <a href="{% url 'home' %}" class="btn btn-warning"><h5>Смотреть курс</h5></a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card border-warning">
+            <div class="card-body text-center">
+                <h3 class="position-relative text-center fw-bold">Кубические конструкции</h3>
+                <img class="MMImage-Origin" src="https://img.freepik.com/premium-vector/worried-upset-teen-student-on-exam_53562-3257.jpg?size=338&amp;ext=jpg">
+                <a href="{% url 'home' %}" class="btn btn-warning"><h5>Смотреть курс</h5></a>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}

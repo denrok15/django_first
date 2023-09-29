@@ -1,0 +1,21 @@
+{% load static %}
+<link rel="stylesheet" href={% static 'gf.css' %}>
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+      <a href="{% url 'login' %}"><h2 class="inactive underlineHover"> Вход </h2></a>
+    <h2 class="active">Регистрация </h2>
+
+    <div class ="container">
+        <form action="{% url 'register' %}" method="post">
+        {{ form }}
+        {% csrf_token %}
+      <button type = 'submit' class="btn btn-success">Зарегистрировать</button>
+      <a class="fw-bold" href="{% url 'home' %}"><br>Назад</a>
+    </form>
+    </div>
+
+    <!-- Remind Passowrd -->
+
+  </div>
+</div>
