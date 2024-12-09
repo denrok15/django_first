@@ -1,0 +1,12 @@
+# Устанавливаем окончания строк для всех текстовых файлов
+* text=auto
+
+# Игнорируем бинарные файлы
+*.png binary
+*.jpg binary
+*.exe binary
+
+# Явно задаем окончания строк для файлов
+*.py text eol=lf
+*.sh text eol=lf
+*.bat text eol=crlf
