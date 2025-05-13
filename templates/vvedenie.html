@@ -3,37 +3,129 @@
 Курс
 {% endblock %}
 {% block content %}
-<h1 class="text-center">Курс по параметрическим уравнениям</h1>
+<h1 class="text-center">Оглавление:</h1>
 <div class="p-4 container">
     <div class="row">
-    <div class="col">
-        <div class="card border-warning">
-            <div class="card-body text-center">
-                <h3 class="position-relative text-center fw-bold">Линейные конструкции</h3>
-                <img class="MMImage-Origin" src="https://img.freepik.com/premium-vector/worried-upset-teen-student-on-exam_53562-3257.jpg?size=338&amp;ext=jpg">
-                <a href="{% url 'teoria' %}" class="btn btn-warning"><h5>Смотреть курс</h5></a>
+        <div class="col">
+            <div class="card border-warning">
+                <div class="card border-warning card-hover">
+                    <div class="card-body text-center">
+                    <h3 class="position-relative text-center fw-bold">Урок №1</h3>
+                    <h3 class="position-relative text-center fw-bold">Введение</h3>
+                    <img class="thumb" fetchpriority="high" data-pin-no-hover="true"
+                         src="https://img.freepik.com/free-vector/exams-concept-illustration_114360-2754.jpg?t=st=1701610067~exp=1701610667~hmac=a30c9e68134acad8852b4487ea87e431a229501b66b67a729d5591522b83039f"
+                         sizes="(max-width: 479px) 100vw, (min-aspect-ratio: 626/626) calc((100vh - 184px) * 1), (max-width: 1095px) calc(100vw - 40px), calc(100vw - 540px)"
+                         width="338" height="338" alt="Бесплатное векторное изображение Иллюстрация концепции экзаменов"
+                         style="max-width: calc((100vh - 184px) * 1)"
+                         srcset="https://img.freepik.com/free-vector/exams-concept-illustration_114360-2754.jpg?w=360&amp;t=st=1701610071~exp=1701610671~hmac=69e3b7a90d727e4bb1ba35723de305572943a783a99c1a3bc04672411ab85d65 360w, https://img.freepik.com/free-vector/exams-concept-illustration_114360-2754.jpg?w=740&amp;t=st=1701610071~exp=1701610671~hmac=69e3b7a90d727e4bb1ba35723de305572943a783a99c1a3bc04672411ab85d65 740w, https://img.freepik.com/free-vector/exams-concept-illustration_114360-2754.jpg?w=826&amp;t=st=1701610071~exp=1701610671~hmac=69e3b7a90d727e4bb1ba35723de305572943a783a99c1a3bc04672411ab85d65 826w, https://img.freepik.com/free-vector/exams-concept-illustration_114360-2754.jpg?w=900&amp;t=st=1701610071~exp=1701610671~hmac=69e3b7a90d727e4bb1ba35723de305572943a783a99c1a3bc04672411ab85d65 900w, https://img.freepik.com/free-vector/exams-concept-illustration_114360-2754.jpg?w=996&amp;t=st=1701610071~exp=1701610671~hmac=69e3b7a90d727e4bb1ba35723de305572943a783a99c1a3bc04672411ab85d65 996w, https://img.freepik.com/free-vector/exams-concept-illustration_114360-2754.jpg?w=1060&amp;t=st=1701610071~exp=1701610671~hmac=69e3b7a90d727e4bb1ba35723de305572943a783a99c1a3bc04672411ab85d65 1060w, https://img.freepik.com/free-vector/exams-concept-illustration_114360-2754.jpg?w=1380&amp;t=st=1701610071~exp=1701610671~hmac=69e3b7a90d727e4bb1ba35723de305572943a783a99c1a3bc04672411ab85d65 1380w, https://img.freepik.com/free-vector/exams-concept-illustration_114360-2754.jpg?w=1480&amp;t=st=1701610071~exp=1701610671~hmac=69e3b7a90d727e4bb1ba35723de305572943a783a99c1a3bc04672411ab85d65 1480w, https://img.freepik.com/free-vector/exams-concept-illustration_114360-2754.jpg?w=1800&amp;t=st=1701610071~exp=1701610671~hmac=69e3b7a90d727e4bb1ba35723de305572943a783a99c1a3bc04672411ab85d65 1800w, https://img.freepik.com/free-vector/exams-concept-illustration_114360-2754.jpg?w=2000&amp;t=st=1701610071~exp=1701610671~hmac=69e3b7a90d727e4bb1ba35723de305572943a783a99c1a3bc04672411ab85d65 2000w">
+                    <a href="{% url 'teoria' %}" class="btn btn-warning"><h5>Смотреть</h5></a>
+                </div>
+                    
+                </div>
+                
             </div>
         </div>
-    </div>
-    <div class="col">
-        <div class="card border-warning">
-            <div class="card-body text-center">
-                <h3 class="position-relative text-center fw-bold">Квадратные конструкции</h3>
-                <img class="MMImage-Origin" src="https://img.freepik.com/premium-vector/worried-upset-teen-student-on-exam_53562-3257.jpg?size=338&amp;ext=jpg">
-                <a href="{% url 'home' %}" class="btn btn-warning"><h5>Смотреть курс</h5></a>
-            </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="card border-warning">
-            <div class="card-body text-center">
-                <h3 class="position-relative text-center fw-bold">Кубические конструкции</h3>
-                <img class="MMImage-Origin" src="https://img.freepik.com/premium-vector/worried-upset-teen-student-on-exam_53562-3257.jpg?size=338&amp;ext=jpg">
-                <a href="{% url 'home' %}" class="btn btn-warning"><h5>Смотреть курс</h5></a>
-            </div>
-        </div>
-    </div>
+        <div class="col">
+            <div class="card border-warning">
+                <div class="card border-warning card-hover">
+                    <div class="card-body text-center">
+                    <h3 class="position-relative text-center fw-bold">Урок №2</h3>
+                    <h3 class="position-relative text-center fw-bold">Простейшие</h3>
+                    <img class="thumb" fetchpriority="high" data-pin-no-hover="true"
+                         src="https://img.freepik.com/free-vector/formula-concept-illustration_114360-8337.jpg?t=st=1700739363~exp=1700739963~hmac=02b6ce262e49749ac28adf6f6ecc80275d18af7823808555970bbbb6b073fafb"
+                         sizes="(max-width: 479px) 100vw, (min-aspect-ratio: 626/626) calc((100vh - 184px) * 1), (max-width: 1095px) calc(100vw - 40px), calc(100vw - 540px)"
+                         width="338" height="338" alt="Бесплатное векторное изображение Иллюстрация концепции формулы"
+                         style="max-width: calc((100vh - 184px) * 1)"
+                         srcset="https://img.freepik.com/free-vector/formula-concept-illustration_114360-8337.jpg?w=360&amp;t=st=1700739373~exp=1700739973~hmac=b49d1abbefed139202ee56e87f7ebb66dc98e03102fa2e64d8219763c6786914 360w, https://img.freepik.com/free-vector/formula-concept-illustration_114360-8337.jpg?w=740&amp;t=st=1700739373~exp=1700739973~hmac=b49d1abbefed139202ee56e87f7ebb66dc98e03102fa2e64d8219763c6786914 740w, https://img.freepik.com/free-vector/formula-concept-illustration_114360-8337.jpg?w=826&amp;t=st=1700739373~exp=1700739973~hmac=b49d1abbefed139202ee56e87f7ebb66dc98e03102fa2e64d8219763c6786914 826w, https://img.freepik.com/free-vector/formula-concept-illustration_114360-8337.jpg?w=900&amp;t=st=1700739373~exp=1700739973~hmac=b49d1abbefed139202ee56e87f7ebb66dc98e03102fa2e64d8219763c6786914 900w, https://img.freepik.com/free-vector/formula-concept-illustration_114360-8337.jpg?w=996&amp;t=st=1700739373~exp=1700739973~hmac=b49d1abbefed139202ee56e87f7ebb66dc98e03102fa2e64d8219763c6786914 996w, https://img.freepik.com/free-vector/formula-concept-illustration_114360-8337.jpg?w=1060&amp;t=st=1700739373~exp=1700739973~hmac=b49d1abbefed139202ee56e87f7ebb66dc98e03102fa2e64d8219763c6786914 1060w, https://img.freepik.com/free-vector/formula-concept-illustration_114360-8337.jpg?w=1380&amp;t=st=1700739373~exp=1700739973~hmac=b49d1abbefed139202ee56e87f7ebb66dc98e03102fa2e64d8219763c6786914 1380w, https://img.freepik.com/free-vector/formula-concept-illustration_114360-8337.jpg?w=1480&amp;t=st=1700739373~exp=1700739973~hmac=b49d1abbefed139202ee56e87f7ebb66dc98e03102fa2e64d8219763c6786914 1480w, https://img.freepik.com/free-vector/formula-concept-illustration_114360-8337.jpg?w=1800&amp;t=st=1700739373~exp=1700739973~hmac=b49d1abbefed139202ee56e87f7ebb66dc98e03102fa2e64d8219763c6786914 1800w, https://img.freepik.com/free-vector/formula-concept-illustration_114360-8337.jpg?w=2000&amp;t=st=1700739373~exp=1700739973~hmac=b49d1abbefed139202ee56e87f7ebb66dc98e03102fa2e64d8219763c6786914 2000w">
 
+                    <a href="{% url 'kyrs2' %}" class="btn btn-warning"><h5>Смотреть</h5></a>
+                </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <div class="col">
+            <div class="card border-warning">
+                <div class="card border-warning card-hover">
+                     <div class="card-body text-center">
+                    <h3 class="position-relative text-center fw-bold">Урок №3</h3>
+                    <h3 class="position-relative text-center fw-bold">Квадратный многочлен</h3>
+                    <img class="thumb" fetchpriority="high" data-pin-no-hover="true"
+                         src="https://img.freepik.com/free-vector/mathematics-concept-illustration_114360-3972.jpg?t=st=1700739140~exp=1700739740~hmac=b17055a80cd88d8b8f8441c286fe7ba0c8c65e0285addcb689cf4e1b9e7ead97"
+                         sizes="(max-width: 479px) 100vw, (min-aspect-ratio: 626/626) calc((100vh - 184px) * 1), (max-width: 1095px) calc(100vw - 40px), calc(100vw - 540px)"
+                         width="338" height="338"
+                         alt="Бесплатное векторное изображение Иллюстрация концепции математики"
+                         style="max-width: calc((100vh - 184px) * 1)"
+                         srcset="https://img.freepik.com/free-vector/mathematics-concept-illustration_114360-3972.jpg?w=360&amp;t=st=1700739216~exp=1700739816~hmac=90b94b6a2920a595cc4d1e25774ace2269c2af51c8ce8f5c67379a47e9ed0858 360w, https://img.freepik.com/free-vector/mathematics-concept-illustration_114360-3972.jpg?w=740&amp;t=st=1700739216~exp=1700739816~hmac=90b94b6a2920a595cc4d1e25774ace2269c2af51c8ce8f5c67379a47e9ed0858 740w, https://img.freepik.com/free-vector/mathematics-concept-illustration_114360-3972.jpg?w=826&amp;t=st=1700739216~exp=1700739816~hmac=90b94b6a2920a595cc4d1e25774ace2269c2af51c8ce8f5c67379a47e9ed0858 826w, https://img.freepik.com/free-vector/mathematics-concept-illustration_114360-3972.jpg?w=900&amp;t=st=1700739216~exp=1700739816~hmac=90b94b6a2920a595cc4d1e25774ace2269c2af51c8ce8f5c67379a47e9ed0858 900w, https://img.freepik.com/free-vector/mathematics-concept-illustration_114360-3972.jpg?w=996&amp;t=st=1700739216~exp=1700739816~hmac=90b94b6a2920a595cc4d1e25774ace2269c2af51c8ce8f5c67379a47e9ed0858 996w, https://img.freepik.com/free-vector/mathematics-concept-illustration_114360-3972.jpg?w=1060&amp;t=st=1700739216~exp=1700739816~hmac=90b94b6a2920a595cc4d1e25774ace2269c2af51c8ce8f5c67379a47e9ed0858 1060w, https://img.freepik.com/free-vector/mathematics-concept-illustration_114360-3972.jpg?w=1380&amp;t=st=1700739216~exp=1700739816~hmac=90b94b6a2920a595cc4d1e25774ace2269c2af51c8ce8f5c67379a47e9ed0858 1380w, https://img.freepik.com/free-vector/mathematics-concept-illustration_114360-3972.jpg?w=1480&amp;t=st=1700739216~exp=1700739816~hmac=90b94b6a2920a595cc4d1e25774ace2269c2af51c8ce8f5c67379a47e9ed0858 1480w, https://img.freepik.com/free-vector/mathematics-concept-illustration_114360-3972.jpg?w=1800&amp;t=st=1700739216~exp=1700739816~hmac=90b94b6a2920a595cc4d1e25774ace2269c2af51c8ce8f5c67379a47e9ed0858 1800w, https://img.freepik.com/free-vector/mathematics-concept-illustration_114360-3972.jpg?w=2000&amp;t=st=1700739216~exp=1700739816~hmac=90b94b6a2920a595cc4d1e25774ace2269c2af51c8ce8f5c67379a47e9ed0858 2000w">
+                    <a href="{% url 'kyrs4' %}" class="btn btn-warning"><h5>Смотреть</h5></a>
+                </div>
+                    
+                </div>
+               
+            </div>
+        </div>
+        <div class="col p-3">
+            <div class="card border-warning">
+                <div class="card border-warning card-hover">
+                    <div class="card-body text-center">
+                    <h3 class="position-relative text-center fw-bold">Урок №4</h3>
+                    <h3 class="position-relative text-center fw-bold">Показательные и log</h3>
+                    <img class="thumb" data-pin-no-hover="true" fetchpriority="high"
+                         src="https://img.freepik.com/free-vector/visionary-technology-concept-illustration_114360-4844.jpg"
+                         srcset="https://img.freepik.com/free-vector/visionary-technology-concept-illustration_114360-4844.jpg?w=360&amp;t=st=1700741489~exp=1700742089~hmac=34b469d36245d1f7c448784234293f985caa7c0498565a75867fe0563d85ede9 360w, https://img.freepik.com/free-vector/visionary-technology-concept-illustration_114360-4844.jpg?w=740&amp;t=st=1700741489~exp=1700742089~hmac=34b469d36245d1f7c448784234293f985caa7c0498565a75867fe0563d85ede9 740w, https://img.freepik.com/free-vector/visionary-technology-concept-illustration_114360-4844.jpg?w=826&amp;t=st=1700741489~exp=1700742089~hmac=34b469d36245d1f7c448784234293f985caa7c0498565a75867fe0563d85ede9 826w, https://img.freepik.com/free-vector/visionary-technology-concept-illustration_114360-4844.jpg?w=900&amp;t=st=1700741489~exp=1700742089~hmac=34b469d36245d1f7c448784234293f985caa7c0498565a75867fe0563d85ede9 900w, https://img.freepik.com/free-vector/visionary-technology-concept-illustration_114360-4844.jpg?w=996&amp;t=st=1700741489~exp=1700742089~hmac=34b469d36245d1f7c448784234293f985caa7c0498565a75867fe0563d85ede9 996w, https://img.freepik.com/free-vector/visionary-technology-concept-illustration_114360-4844.jpg?w=1060&amp;t=st=1700741489~exp=1700742089~hmac=34b469d36245d1f7c448784234293f985caa7c0498565a75867fe0563d85ede9 1060w, https://img.freepik.com/free-vector/visionary-technology-concept-illustration_114360-4844.jpg?w=1380&amp;t=st=1700741489~exp=1700742089~hmac=34b469d36245d1f7c448784234293f985caa7c0498565a75867fe0563d85ede9 1380w, https://img.freepik.com/free-vector/visionary-technology-concept-illustration_114360-4844.jpg?w=1480&amp;t=st=1700741489~exp=1700742089~hmac=34b469d36245d1f7c448784234293f985caa7c0498565a75867fe0563d85ede9 1480w, https://img.freepik.com/free-vector/visionary-technology-concept-illustration_114360-4844.jpg?w=1800&amp;t=st=1700741489~exp=1700742089~hmac=34b469d36245d1f7c448784234293f985caa7c0498565a75867fe0563d85ede9 1800w, https://img.freepik.com/free-vector/visionary-technology-concept-illustration_114360-4844.jpg?w=2000&amp;t=st=1700741489~exp=1700742089~hmac=34b469d36245d1f7c448784234293f985caa7c0498565a75867fe0563d85ede9 2000w"
+                         sizes="(max-width: 479px) 100vw, (min-aspect-ratio: 626/626) calc((100vh - 184px) * 1.000), (max-width: 1095px) calc(100vw - 40px), calc(100vw - 400px)"
+                         style="max-width: calc((100vh - 184px) * 1.000)" width="338" height="338"
+                         alt="Визуальная иллюстрация концепции технологии"
+                         onerror="this.onerror=null;ga('send', 'event', 'broken_image', 'detail', '114360_12217746');">
+                    <a href="kyrs3.html" class="btn btn-warning"><h5>Смотреть</h5></a>
+                </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <div class="col p-3">
+            <div class="card border-warning">
+                <div class="card border-warning card-hover">
+                    <div class="card-body text-center">
+                    <h3 class="position-relative text-center fw-bold">Урок №5</h3>
+                    <h3 class="position-relative text-center fw-bold">Неравенства</h3>
+                    <img class="thumb" fetchpriority="high" data-pin-no-hover="true"
+                         src="https://img.freepik.com/free-vector/code-typing-concept-illustration_114360-3581.jpg"
+                         sizes="(max-width: 479px) 100vw, (min-aspect-ratio: 626/626) calc((100vh - 184px) * 1), (max-width: 1095px) calc(100vw - 40px), calc(100vw - 540px)"
+                         width="338" height="338" alt="Иллюстрация концепции ввода кода"
+                         style="max-width: calc((100vh - 184px) * 1)"
+                         srcset="https://img.freepik.com/free-vector/code-typing-concept-illustration_114360-3581.jpg?w=360&amp;t=st=1701610144~exp=1701610744~hmac=7233951c2e4d15bd268933a1dc9a333d17c3de3cd5b0f5078a017464841d1b7e 360w, https://img.freepik.com/free-vector/code-typing-concept-illustration_114360-3581.jpg?w=740&amp;t=st=1701610144~exp=1701610744~hmac=7233951c2e4d15bd268933a1dc9a333d17c3de3cd5b0f5078a017464841d1b7e 740w, https://img.freepik.com/free-vector/code-typing-concept-illustration_114360-3581.jpg?w=826&amp;t=st=1701610144~exp=1701610744~hmac=7233951c2e4d15bd268933a1dc9a333d17c3de3cd5b0f5078a017464841d1b7e 826w, https://img.freepik.com/free-vector/code-typing-concept-illustration_114360-3581.jpg?w=900&amp;t=st=1701610144~exp=1701610744~hmac=7233951c2e4d15bd268933a1dc9a333d17c3de3cd5b0f5078a017464841d1b7e 900w, https://img.freepik.com/free-vector/code-typing-concept-illustration_114360-3581.jpg?w=996&amp;t=st=1701610144~exp=1701610744~hmac=7233951c2e4d15bd268933a1dc9a333d17c3de3cd5b0f5078a017464841d1b7e 996w, https://img.freepik.com/free-vector/code-typing-concept-illustration_114360-3581.jpg?w=1060&amp;t=st=1701610144~exp=1701610744~hmac=7233951c2e4d15bd268933a1dc9a333d17c3de3cd5b0f5078a017464841d1b7e 1060w, https://img.freepik.com/free-vector/code-typing-concept-illustration_114360-3581.jpg?w=1380&amp;t=st=1701610144~exp=1701610744~hmac=7233951c2e4d15bd268933a1dc9a333d17c3de3cd5b0f5078a017464841d1b7e 1380w, https://img.freepik.com/free-vector/code-typing-concept-illustration_114360-3581.jpg?w=1480&amp;t=st=1701610144~exp=1701610744~hmac=7233951c2e4d15bd268933a1dc9a333d17c3de3cd5b0f5078a017464841d1b7e 1480w, https://img.freepik.com/free-vector/code-typing-concept-illustration_114360-3581.jpg?w=1800&amp;t=st=1701610144~exp=1701610744~hmac=7233951c2e4d15bd268933a1dc9a333d17c3de3cd5b0f5078a017464841d1b7e 1800w, https://img.freepik.com/free-vector/code-typing-concept-illustration_114360-3581.jpg?w=2000&amp;t=st=1701610144~exp=1701610744~hmac=7233951c2e4d15bd268933a1dc9a333d17c3de3cd5b0f5078a017464841d1b7e 2000w">
+                    <a href="kyrs3.html" class="btn btn-warning"><h5>Смотреть</h5></a>
+                </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <div class="col p-3">
+            <div class="card border-warning">
+                <div class="card border-warning card-hover">
+                     <div class="card-body text-center">
+                    <h3 class="position-relative text-center fw-bold">Урок №6</h3>
+                    <h3 class="position-relative text-center fw-bold">Графический способ</h3>
+                    <img class="thumb" fetchpriority="high" data-pin-no-hover="true"
+                         src="https://img.freepik.com/free-vector/teacher-concept-illustration_114360-2743.jpg?t=st=1701610186~exp=1701610786~hmac=384007dc573e37042e2bf3429b6ef1c72d87a71dff9be2484e389535d43eb8ca"
+                         sizes="(max-width: 479px) 100vw, (min-aspect-ratio: 626/626) calc((100vh - 184px) * 1), (max-width: 1095px) calc(100vw - 40px), calc(100vw - 540px)"
+                         width="338" height="338" alt="Учитель концепции иллюстрации"
+                         style="max-width: calc((100vh - 184px) * 1)"
+                         srcset="https://img.freepik.com/free-vector/teacher-concept-illustration_114360-2743.jpg?w=360&amp;t=st=1701610191~exp=1701610791~hmac=c65d72c8317ce1c075bec72e660d1902a99d15995ba07743390660a4314c77ad 360w, https://img.freepik.com/free-vector/teacher-concept-illustration_114360-2743.jpg?w=740&amp;t=st=1701610191~exp=1701610791~hmac=c65d72c8317ce1c075bec72e660d1902a99d15995ba07743390660a4314c77ad 740w, https://img.freepik.com/free-vector/teacher-concept-illustration_114360-2743.jpg?w=826&amp;t=st=1701610191~exp=1701610791~hmac=c65d72c8317ce1c075bec72e660d1902a99d15995ba07743390660a4314c77ad 826w, https://img.freepik.com/free-vector/teacher-concept-illustration_114360-2743.jpg?w=900&amp;t=st=1701610191~exp=1701610791~hmac=c65d72c8317ce1c075bec72e660d1902a99d15995ba07743390660a4314c77ad 900w, https://img.freepik.com/free-vector/teacher-concept-illustration_114360-2743.jpg?w=996&amp;t=st=1701610191~exp=1701610791~hmac=c65d72c8317ce1c075bec72e660d1902a99d15995ba07743390660a4314c77ad 996w, https://img.freepik.com/free-vector/teacher-concept-illustration_114360-2743.jpg?w=1060&amp;t=st=1701610191~exp=1701610791~hmac=c65d72c8317ce1c075bec72e660d1902a99d15995ba07743390660a4314c77ad 1060w, https://img.freepik.com/free-vector/teacher-concept-illustration_114360-2743.jpg?w=1380&amp;t=st=1701610191~exp=1701610791~hmac=c65d72c8317ce1c075bec72e660d1902a99d15995ba07743390660a4314c77ad 1380w, https://img.freepik.com/free-vector/teacher-concept-illustration_114360-2743.jpg?w=1480&amp;t=st=1701610191~exp=1701610791~hmac=c65d72c8317ce1c075bec72e660d1902a99d15995ba07743390660a4314c77ad 1480w, https://img.freepik.com/free-vector/teacher-concept-illustration_114360-2743.jpg?w=1800&amp;t=st=1701610191~exp=1701610791~hmac=c65d72c8317ce1c075bec72e660d1902a99d15995ba07743390660a4314c77ad 1800w, https://img.freepik.com/free-vector/teacher-concept-illustration_114360-2743.jpg?w=2000&amp;t=st=1701610191~exp=1701610791~hmac=c65d72c8317ce1c075bec72e660d1902a99d15995ba07743390660a4314c77ad 2000w">
+                    <a href="{% url 'grafkyrs' %}" class="btn btn-warning"><h5>Смотреть</h5></a>
+                </div>
+                    
+                </div>
+               
+            </div>
+        </div>
+
+
+    </div>
 
 
 {% endblock %}

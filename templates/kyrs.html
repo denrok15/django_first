@@ -1,44 +1,42 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block title %}
-    Курс
+    Решу ЕГЭ!
 {% endblock %}
 {% block content %}
-    <h1 class="text-center">Линейные конструкци</h1>
+    <h1 class="text-center">Введение</h1>
+    <div class="p-4">
     <div class="p-4 container">
-        <div class="row">
-            <div class="col">
-                <div class="card border-warning">
-                    <div class="card-body text-center">
-                        <h3 class="position-relative text-center fw-bold">Теория</h3>
-                        <p class = "text-white">dsadsadasda</p>
-                        <img src="   https://cdn-icons-png.flaticon.com/512/1465/1465053.png " width="256" height="256" alt="" title="" class="img-small">
-                        <p class = "text-white">dsadsadasda</p>
-                        <a href="{% url 'linteor' %}" class="btn btn-warning"><h5>Смотреть курс</h5></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card border-warning">
-                    <div class="card-body text-center">
-                        <h3 class="position-relative text-center fw-bold p-0">Практика</h3>
-                        <p class = "text-white">dsadsadasda</p>
-                        <img  src="   https://cdn-icons-png.flaticon.com/512/5363/5363325.png " width="256" height="256" alt="" title="" class = "rounded-1">
-                        <p class = "text-white">dsadsadasda</p>
+    <div class="row">
+    <div class="col">
+        <div class="card border-warning card-hover">
+            <div class="card-body text-center">
+                <h3 class="position-relative text-center fw-bold">Вводная часть</h3>
+                <p class="text-white">dsadsadasda</p>
+                <img src="   https://cdn-icons-png.flaticon.com/512/12404/12404326.png " width="256"
+                     height="256" alt="" title="" class="img-small">
 
-                        <a href="{% url 'home' %}" class="btn btn-warning"><h5>Смотреть курс</h5></a>
-                    </div>
-                </div>
+                <p class="text-white">dsadsadasda</p>
+                <a href="{% url 'vvodteor' %}" class="btn btn-warning"><h5>Смотреть курс</h5></a>
             </div>
-            <div class="col">
-                <div class="card border-warning">
-                    <div class="card-body text-center">
-                        <h3 class="position-relative text-center fw-bold">Контрольная работа</h3>
-                        <p class = "text-white">dsadsadasda</p>
-                        <img src="https://cdn-icons-png.flaticon.com/512/4090/4090353.png" width="256" height="256" alt="Математика бесплатно иконка" title="Математика бесплатно иконка">
+        </div>
+    </div>
+    <div class="col">
+        <div class="card border-warning card-hover">
+            <div class="card-body text-center">
+                <h3 class="position-relative text-center fw-bold p-0">Свойства</h3>
+                <p class="text-white">dsadsadasda</p>
+                <img src="   https://cdn-icons-png.flaticon.com/512/207/207193.png " width="256" height="256"
+                     alt="" title="" class="img-small">
+                <p class="text-white">dsadsadasda</p>
+                <a href="{% url 'property' %}" class="btn btn-warning"><h5>Смотреть курс</h5></a>
+            </div>
+        </div>
+    </div>
 
-                        <p class = "text-white">dsadsadasda</p>
-                        <a href="{% url 'home' %}" class="btn btn-warning"><h5>Смотреть курс</h5></a>
-                    </div>
-                </div>
-            </div>
+
+    </div>
 {% endblock %}
+
+
+

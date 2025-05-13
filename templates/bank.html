@@ -1,0 +1,905 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Решу ЕГЭ!
+{% endblock %}
+{% block content %}
+</body>
+<h1 class="text-center">Сборник всех задач</h1>
+<div class="container p-2">
+    <div class="row p-2">
+        <h1 class="text-center"> с параметром</h1> <br>
+        <div class="fs-5 p-2 fw-semibold">
+            Задание 1 <br>
+            Решите уравнение при всех значениях параметра a:
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mo stretchy="false">(</mo>
+                <msup>
+                    <mi>a</mi>
+                    <mn>2</mn>
+                </msup>
+                <mo>+</mo>
+                <mi>a</mi>
+                <mo stretchy="false">)</mo>
+                <mi>x</mi>
+                <mo>&#x2212;<!-- − --></mo>
+                <mn>2</mn>
+                <msup>
+                    <mi>a</mi>
+                    <mn>2</mn>
+                </msup>
+                <mo>=</mo>
+                <mn>3</mn>
+                <mi>a</mi>
+
+            </math>
+            <button class="btn btn-primary mt-3" onclick="toggleText('hiddenText1')">Показать решение</button>
+            <div id="hiddenText1" style="display: none;" class="p-2">
+                Данное уравнение линейного типа:
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>a</mi>
+                    <mo stretchy="false">(</mo>
+                    <mi>a</mi>
+                    <mo>+</mo>
+                    <mn>1</mn>
+                    <mo stretchy="false">)</mo>
+                    <mi>x</mi>
+                    <mo>=</mo>
+                    <mi>a</mi>
+                    <mo stretchy="false">(</mo>
+                    <mn>2</mn>
+                    <mi>a</mi>
+                    <mo>+</mo>
+                    <mn>3</mn>
+                    <mo stretchy="false">)</mo>
+                </math>
+                <br>
+                1) Если
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>a</mi>
+                    <mo>=</mo>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>1</mn>
+                </math>
+                , то уравнение примет вид
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mn>0</mn>
+                    <mo>&#x22C5;<!-- ⋅ --></mo>
+                    <mi>x</mi>
+                    <mo>=</mo>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>1</mn>
+                </math>
+                , что не имеет решений <br>
+                2) Если
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>a</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                </math>
+                , то уравнение примет вид
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mn>0</mn>
+                    <mo>&#x22C5;<!-- ⋅ --></mo>
+                    <mi>x</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                </math>
+                . Решением будут
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>x</mi>
+                    <mo>&#x2208;<!-- ∈ --></mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                        <mi mathvariant="double-struck">R</mi>
+                    </mrow>
+                </math>
+                <br>
+                3) Если
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>a</mi>
+                    <mo>&#x2260;<!-- ≠ --></mo>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>1</mn>
+                    <mo>;</mo>
+                    <mn>0</mn>
+                </math>
+                , то корнем уравнения будет
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>x</mi>
+                    <mo>=</mo>
+                    <mstyle displaystyle="true" scriptlevel="0">
+                        <mfrac>
+                            <mrow>
+                                <mi>a</mi>
+                                <mo stretchy="false">(</mo>
+                                <mn>2</mn>
+                                <mi>a</mi>
+                                <mo>+</mo>
+                                <mn>3</mn>
+                                <mo stretchy="false">)</mo>
+                            </mrow>
+                            <mrow>
+                                <mi>a</mi>
+                                <mo stretchy="false">(</mo>
+                                <mi>a</mi>
+                                <mo>+</mo>
+                                <mn>1</mn>
+                                <mo stretchy="false">)</mo>
+                            </mrow>
+                        </mfrac>
+                    </mstyle>
+                    <mo>=</mo>
+                    <mstyle displaystyle="true" scriptlevel="0">
+                        <mfrac>
+                            <mrow>
+                                <mn>2</mn>
+                                <mi>a</mi>
+                                <mo>+</mo>
+                                <mn>3</mn>
+                            </mrow>
+                            <mrow>
+                                <mi>a</mi>
+                                <mo>+</mo>
+                                <mn>1</mn>
+                            </mrow>
+                        </mfrac>
+                    </mstyle>
+                </math>
+                <br> Ответ
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>a</mi>
+                    <mo>=</mo>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>1</mn>
+                    <mtext>&#xA0;</mtext>
+                    <mo stretchy="false">&#x21D2;<!-- ⇒ --></mo>
+                    <mtext>&#xA0;</mtext>
+                    <mi>x</mi>
+                    <mo>&#x2208;<!-- ∈ --></mo>
+                    <mi class="MJX-variant">&#x2205;<!-- ∅ --></mi>
+                </math>
+                <br>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>a</mi>
+                    <mo>=</mo>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>1</mn>
+                    <mtext>&#xA0;</mtext>
+                    <mo stretchy="false">&#x21D2;<!-- ⇒ --></mo>
+                    <mtext>&#xA0;</mtext>
+                    <mi>x</mi>
+                    <mo>&#x2208;<!-- ∈ --></mo>
+                    <mi class="MJX-variant">&#x2205;<!-- ∅ --></mi>
+                </math>
+                <br>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>a</mi>
+                    <mo>&#x2260;<!-- ≠ --></mo>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mn>1</mn>
+                    <mo>;</mo>
+                    <mn>0</mn>
+                    <mtext>&#xA0;</mtext>
+                    <mo stretchy="false">&#x21D2;<!-- ⇒ --></mo>
+                    <mtext>&#xA0;</mtext>
+                    <mi>x</mi>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mrow>
+                            <mn>2</mn>
+                            <mi>a</mi>
+                            <mo>+</mo>
+                            <mn>3</mn>
+                        </mrow>
+                        <mrow>
+                            <mi>a</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                        </mrow>
+                    </mfrac>
+                </math>
+                <br>
+            </div>
+            <div class="fs-5 p-2 fw-semibold">
+            </div>
+    </div>
+    <div class="p-2 fw-semibold fs-5">
+        Задание 3 <br>
+        Решите уравнение
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>a</mi>
+            <mi>x</mi>
+            <mo>+</mo>
+            <mn>3</mn>
+            <mo>=</mo>
+            <mn>0</mn>
+        </math>
+        при всех значениях
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>a</mi>
+        </math>
+        <br>
+        <button class="btn btn-primary mt-3" onclick="toggleText('hiddenText3')">Показать решение</button>
+        <div id="hiddenText3" style="display: none;">
+            Уравнение можно переписать в виде
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>a</mi>
+                <mi>x</mi>
+                <mo>=</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <mn>3</mn>
+            </math>
+            . Рассмотрим два случая: <br>
+            1)
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>a</mi>
+                <mo>=</mo>
+                <mn>0</mn>
+            </math>
+            В этом случае левая часть равна 0, а правая – нет, следовательно, уравнение не имеет корней. <br>
+            2)
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>a</mi>
+                <mo>&#x2260;<!-- ≠ --></mo>
+                <mn>0</mn>
+            </math>
+            .Тогда
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>x</mi>
+                <mo>=</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <mstyle displaystyle="true" scriptlevel="0">
+                    <mfrac>
+                        <mn>3</mn>
+                        <mi>a</mi>
+                    </mfrac>
+                </mstyle>
+            </math>
+            <br>
+            Ответ:
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>a</mi>
+                <mo>=</mo>
+                <mn>0</mn>
+                <mo stretchy="false">&#x21D2;<!-- ⇒ --></mo>
+                <mi>x</mi>
+                <mo>&#x2208;<!-- ∈ --></mo>
+                <mi class="MJX-variant">&#x2205;<!-- ∅ --></mi>
+                <mo>;</mo>
+                <mspace linebreak="newline"/>
+                <mi>a</mi>
+                <mo>&#x2260;<!-- ≠ --></mo>
+                <mn>0</mn>
+                <mo stretchy="false">&#x21D2;<!-- ⇒ --></mo>
+                <mi>x</mi>
+                <mo>=</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <mstyle displaystyle="true" scriptlevel="0">
+                    <mfrac>
+                        <mn>3</mn>
+                        <mi>a</mi>
+                    </mfrac>
+                </mstyle>
+            </math>
+            <br>
+        </div>
+        <br>
+
+        Задание 4: <br> Решите уравнение
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>a</mi>
+            <mi>x</mi>
+            <mo>+</mo>
+            <msup>
+                <mi>a</mi>
+                <mn>2</mn>
+            </msup>
+            <mo>=</mo>
+            <mn>0</mn>
+        </math>
+        при всех значениях параметра
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>a</mi>
+        </math>
+        <br>
+        <button class="btn btn-primary mt-3" onclick="toggleText('hiddenText4')">Показать решение</button>
+        <div id="hiddenText4" style="display: none;">
+            <br> Уравнение можно переписать в виде
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>a</mi>
+                <mi>x</mi>
+                <mo>=</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <msup>
+                    <mi>a</mi>
+                    <mn>2</mn>
+                </msup>
+            </math>
+            . Рассмотрим два случая <br>
+            1)
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>a</mi>
+                <mo>=</mo>
+                <mn>0</mn>
+            </math>
+            . В этом случае левая и правая части равны
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mn>0</mn>
+            </math>
+            , следовательно, уравнение верно при любых значениях переменной
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>x</mi>
+            </math>
+            <br>
+            2)
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>a</mi>
+                <mo>&#x2260;<!-- ≠ --></mo>
+                <mn>0</mn>
+            </math>
+            .Тогда
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>x</mi>
+                <mo>=</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <mi>a</mi>
+            </math>
+            <br>
+            Ответ: <br>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>a</mi>
+                <mo>=</mo>
+                <mn>0</mn>
+                <mo stretchy="false">&#x21D2;<!-- ⇒ --></mo>
+                <mi>x</mi>
+                <mo>&#x2208;<!-- ∈ --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="double-struck">R</mi>
+                </mrow>
+                <mo>;</mo>
+                <mspace linebreak="newline"/>
+                <mi>a</mi>
+                <mo>&#x2260;<!-- ≠ --></mo>
+                <mn>0</mn>
+                <mo stretchy="false">&#x21D2;<!-- ⇒ --></mo>
+                <mi>x</mi>
+                <mo>=</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <mi>a</mi>
+            </math>
+            <br>
+        </div>
+        <br>
+        Задание 5: <br>
+        При каких
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>a</mi>
+        </math>
+        все решения неравенства
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>x</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>4</mn>
+            <mo>+</mo>
+            <mn>2</mn>
+            <mi>a</mi>
+            <mo>&lt;</mo>
+            <mn>0</mn>
+        </math>
+        является решениями неравенства
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mn>2</mn>
+            <mi>x</mi>
+            <mo>+</mo>
+            <mn>3</mn>
+            <mo>&#x2212;<!-- − --></mo>
+            <mi>a</mi>
+            <mo>&lt;</mo>
+            <mn>0</mn>
+        </math>
+        <br>
+        <button class="btn btn-primary mt-3" onclick="toggleText('hiddenText5')">Показать решение</button>
+        <div id="hiddenText5" style="display: none;">
+            <br>Из условия следует, что множество решений первого неравенства должно содержаться во
+            множестве решений второго неравенства. Решим оба неравенства:
+            <br>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>x</mi>
+                <mo>&lt;</mo>
+                <mn>4</mn>
+                <mo>&#x2212;<!-- − --></mo>
+                <mn>2</mn>
+                <mi>a</mi>
+            </math>
+            и
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>x</mi>
+                <mo>&lt;</mo>
+                <mfrac>
+                    <mrow>
+                        <mi>a</mi>
+                        <mo>&#x2212;<!-- − --></mo>
+                        <mn>3</mn>
+                    </mrow>
+                    <mn>2</mn>
+                </mfrac>
+            </math>
+            . Чтобы луч
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mo stretchy="false">(</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                <mo>;</mo>
+                <mn>4</mn>
+                <mo>&#x2212;<!-- − --></mo>
+                <mn>2</mn>
+                <mi>a</mi>
+                <mo stretchy="false">)</mo>
+            </math>
+            содержался в луче
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                        <mo>&#x2212;<!-- − --></mo>
+                        <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                        <mo>;</mo>
+                        <mfrac>
+                            <mrow>
+                                <mi>a</mi>
+                                <mo>&#x2212;<!-- − --></mo>
+                                <mn>3</mn>
+                            </mrow>
+                            <mn>2</mn>
+                        </mfrac>
+                    </mrow>
+                    <mo>)</mo>
+                </mrow>
+            </math>
+            , нужно чтобы
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mn>4</mn>
+                <mo>&#x2212;<!-- − --></mo>
+                <mn>2</mn>
+                <mi>a</mi>
+                <mo>&#x2A7D;<!-- ⩽ --></mo>
+                <mstyle displaystyle="true" scriptlevel="0">
+                    <mfrac>
+                        <mrow>
+                            <mi>a</mi>
+                            <mo>&#x2212;<!-- − --></mo>
+                            <mn>3</mn>
+                        </mrow>
+                        <mn>2</mn>
+                    </mfrac>
+                </mstyle>
+                <mspace width="1em"/>
+                <mo stretchy="false">&#x21D2;<!-- ⇒ --></mo>
+                <mspace width="1em"/>
+                <mi>a</mi>
+                <mo>&#x2A7E;<!-- ⩾ --></mo>
+                <mstyle displaystyle="true" scriptlevel="0">
+                    <mfrac>
+                        <mn>11</mn>
+                        <mn>5</mn>
+                    </mfrac>
+                </mstyle>
+            </math>
+            <br>
+            Ответ
+            <br>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>a</mi>
+                <mo>&#x2A7E;<!-- ⩾ --></mo>
+                <mfrac>
+                    <mn>11</mn>
+                    <mn>5</mn>
+                </mfrac>
+            </math>
+            </div>
+            <br>Задание 6 <br>Решить при всех значениях параметра уравнение
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <msqrt>
+                    <mi>x</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mi>a</mi>
+                </msqrt>
+                <mo>=</mo>
+                <mn>2</mn>
+            </math>
+            <br>
+            <button class="btn btn-primary mt-3" onclick="toggleText('hiddenText6')">Показать решение</button>
+            <div id="hiddenText6" style="display: none;">
+                Данное уравнение можно переписать в виде
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>x</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mi>a</mi>
+                    <mo>=</mo>
+                    <mn>4</mn>
+                </math>
+                при условии,
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>x</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mi>a</mi>
+                    <mo>&#x2A7E;<!-- ⩾ --></mo>
+                    <mn>0</mn>
+                </math>
+                . Следовательно, получаем: <br>
+                <br>
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                    <mrow>
+                        <mo>{</mo>
+                        <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+                            <mtr>
+                                <mtd>
+                                    <mi>x</mi>
+                                    <mo>=</mo>
+                                    <mn>4</mn>
+                                    <mo>+</mo>
+                                    <mi>a</mi>
+                                </mtd>
+                            </mtr>
+                            <mtr>
+                                <mtd>
+                                    <mi>x</mi>
+                                    <mo>&#x2A7E;<!-- ⩾ --></mo>
+                                    <mi>a</mi>
+                                </mtd>
+                            </mtr>
+                        </mtable>
+                        <mo fence="true" stretchy="true" symmetric="true"></mo>
+                    </mrow>
+                </math>
+                <br>
+                Если
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mn>4</mn>
+                    <mo>+</mo>
+                    <mi>a</mi>
+                    <mo>&#x2A7E;<!-- ⩾ --></mo>
+                    <mi>a</mi>
+                </math>
+                , то корень
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>x</mi>
+                    <mo>=</mo>
+                    <mn>4</mn>
+                    <mo>+</mo>
+                    <mi>a</mi>
+                </math>
+                удовлетворяет условию
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>x</mi>
+                    <mo>&#x2A7E;<!-- ⩾ --></mo>
+                    <mi>a</mi>
+                </math>
+                , то есть система имеет единственное решение <br>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>x</mi>
+                    <mo>=</mo>
+                    <mn>4</mn>
+                    <mo>+</mo>
+                    <mi>a</mi>
+                </math>
+                <br>Если
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mn>4</mn>
+                    <mo>+</mo>
+                    <mi>a</mi>
+                    <mo>&lt;</mo>
+                    <mi>a</mi>
+                </math>
+                ,то корень
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>x</mi>
+                    <mo>=</mo>
+                    <mn>4</mn>
+                    <mo>+</mo>
+                    <mi>a</mi>
+                </math>
+                не удовлетворяет условию
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>x</mi>
+                    <mo>&#x2A7E;<!-- ⩾ --></mo>
+                    <mi>a</mi>
+                </math>
+                , то есть система не имеет решений. <br>
+                <br> Ответ: <br>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>x</mi>
+                    <mo>=</mo>
+                    <mn>4</mn>
+                    <mo>+</mo>
+                    <mi>a</mi>
+                </math>
+                при всех
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>a</mi>
+                    <mo>&#x2208;<!-- ∈ --></mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                        <mi mathvariant="double-struck">R</mi>
+                    </mrow>
+                </math>
+
+
+            </div>
+        <br>
+             Задание 2: <br>
+            Решите уравнение при всех значениях параметра a:
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mstyle displaystyle="true" scriptlevel="0">
+                    <mfrac>
+                        <mrow>
+                            <mi>x</mi>
+                            <mo>&#x2212;<!-- − --></mo>
+                            <mi>a</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>x</mi>
+                            <mo>&#x2212;<!-- − --></mo>
+                            <mn>1</mn>
+                        </mrow>
+                    </mfrac>
+                </mstyle>
+                <mo>=</mo>
+                <mn>0</mn>
+            </math>
+            <button class="btn btn-primary mt-3" onclick="toggleText('hiddenText2')">Показать решение</button>
+            <div id="hiddenText2" style="display: none;">
+                Данное уравнение равносильно
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                    <mrow>
+                        <mo>{</mo>
+                        <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+                            <mtr>
+                                <mtd>
+                                    <mi>x</mi>
+                                    <mo>=</mo>
+                                    <mi>a</mi>
+                                </mtd>
+                            </mtr>
+                            <mtr>
+                                <mtd>
+                                    <mi>x</mi>
+                                    <mo>&#x2260;<!-- ≠ --></mo>
+                                    <mn>1</mn>
+                                </mtd>
+                            </mtr>
+                        </mtable>
+                        <mo fence="true" stretchy="true" symmetric="true"></mo>
+                    </mrow>
+                </math>
+                Следовательно, если
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>a</mi>
+                    <mo>=</mo>
+                    <mn>1</mn>
+                </math>
+                , то уравнение не имеет решений, если
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>a</mi>
+                    <mo>&#x2260;<!-- ≠ --></mo>
+                    <mn>1</mn>
+                </math>
+                , то корнем уравнения является x = a
+                <br> Ответ:
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>a</mi>
+                    <mo>=</mo>
+                    <mn>1</mn>
+                    <mtext>&#xA0;</mtext>
+                    <mo stretchy="false">&#x21D2;<!-- ⇒ --></mo>
+                    <mtext>&#xA0;</mtext>
+                    <mi>x</mi>
+                    <mo>&#x2208;<!-- ∈ --></mo>
+                    <mi class="MJX-variant">&#x2205;<!-- ∅ --></mi>
+                </math>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>a</mi>
+                    <mo>&#x2260;<!-- ≠ --></mo>
+                    <mn>1</mn>
+                    <mtext>&#xA0;</mtext>
+                    <mo stretchy="false">&#x21D2;<!-- ⇒ --></mo>
+                    <mtext>&#xA0;</mtext>
+                    <mi>x</mi>
+                    <mo>=</mo>
+                    <mi>a</mi>
+                </math>
+            </div>
+        <br>
+        Задание 7: <br>
+        Найдите все значения параметра a, при каждом из которых уравнение
+        <img src="https://ege.sdamgia.ru/formula/svg/5d/5d454a2a832045df2e49e7285f8b7995.svg" class="tex"  style="vertical-align:-9.3pt" alt=" дробь: чис­ли­тель: 9x в квад­ра­те минус a в квад­ра­те , зна­ме­на­тель: x в квад­ра­те плюс 8x плюс 16 минус a в квад­ра­те конец дроби =0 ">
+        <br> имеет ровно два различных корня. <br>
+        <button class="btn btn-primary mt-3" onclick="toggleText('hiddenText8')">Показать решение</button>
+        <div id="hiddenText8" style="display: none;">
+            Преобразуем уравнение, используя формулы сокращённого умножения: <br> <img src="https://ege.sdamgia.ru/formula/svg/bf/bf0fb27216bd012b2ec89114742f7af8.svg" class="tex" style="vertical-align:-30.9pt" alt=" дробь: чис­ли­тель: 9x в квад­ра­те минус a в квад­ра­те , зна­ме­на­тель: x в квад­ра­те плюс 8x плюс 16 минус a в квад­ра­те конец дроби =0 рав­но­силь­но дробь: чис­ли­тель: левая круг­лая скоб­ка 3x минус a пра­вая круг­лая скоб­ка левая круг­лая скоб­ка 3x плюс a пра­вая круг­лая скоб­ка , зна­ме­на­тель: левая круг­лая скоб­ка x плюс 4 пра­вая круг­лая скоб­ка в квад­ра­те минус a в квад­ра­те конец дроби =0 рав­но­силь­но дробь: чис­ли­тель: левая круг­лая скоб­ка 3x минус a пра­вая круг­лая скоб­ка левая круг­лая скоб­ка 3x плюс a пра­вая круг­лая скоб­ка , зна­ме­на­тель: левая круг­лая скоб­ка x плюс 4 минус a пра­вая круг­лая скоб­ка левая круг­лая скоб­ка x плюс 4 плюс a пра­вая круг­лая скоб­ка конец дроби =0 рав­но­силь­но си­сте­ма вы­ра­же­ний со­во­куп­ность вы­ра­же­ний a=3x,a= минус 3x, конец си­сте­мы . a не равно x плюс 4,a не равно минус x минус 4. конец со­во­куп­но­сти . ">
+            <img src="../img/Савмок.PNG" alt="">
+            <p class="left_margin">Изоб­ра­зим ре­ше­ние по­лу­чен­ной си­сте­мы на плос­ко­сти <i>xOa</i>. Гра­фи­ком си­сте­мы (изоб­ра­же­но оран­же­вым) будет со­во­куп­ность двух пря­мых <img src="https://ege.sdamgia.ru/formula/svg/6c/6c7187e8495bb9283fcb4d25f175d147.svg" class="tex" style="vertical-align:-3.0pt" alt="a=3x,a= минус 3x,"> ис­клю­чая точки, ко­то­рые лежат на пря­мых <img src="https://ege.sdamgia.ru/formula/svg/ac/ac19051ea307f4c798aa64e59cac9d0e.svg" class="tex" style="vertical-align:-3.0pt" alt="a=x плюс 4,a= минус x минус 4,"> а имен­но: точки <img src="https://ege.sdamgia.ru/formula/svg/03/0328f003a61fa198fdb0991c760850ea.svg" class="tex" style="vertical-align:-3.6pt" alt=" левая круг­лая скоб­ка минус 1;3 пра­вая круг­лая скоб­ка , левая круг­лая скоб­ка минус 1; минус 3 пра­вая круг­лая скоб­ка , левая круг­лая скоб­ка 2;6 пра­вая круг­лая скоб­ка , левая круг­лая скоб­ка 2; минус 6 пра­вая круг­лая скоб­ка ."></p>
+            <center><p><img src="https://ege.sdamgia.ru/formula/svg/69/6955fd2551349fd4443c79a7cca87091.svg" class="tex" style="vertical-align:-2.2pt" alt="a мень­ше минус 6; минус 6 мень­ше a мень­ше минус 3; минус 3 мень­ше a мень­ше 0;0 мень­ше a мень­ше 3;3 мень­ше a мень­ше 6;иa боль­ше 6. "></p><p class="left_margin"></p></center>
+            <p><span style="letter-spacing: 2px;">Ответ:</span> <img src="https://ege.sdamgia.ru/formula/svg/ab/ab92a2b6ec0456b0b2a0f81cebefaca4.svg" class="tex" style="vertical-align:-3.6pt" alt=" левая круг­лая скоб­ка минус бес­ко­неч­ность ; минус 6 пра­вая круг­лая скоб­ка \cup левая круг­лая скоб­ка минус 6; минус 3 пра­вая круг­лая скоб­ка \cup левая круг­лая скоб­ка минус 3;0 пра­вая круг­лая скоб­ка \cup левая круг­лая скоб­ка 0;3 пра­вая круг­лая скоб­ка \cup левая круг­лая скоб­ка 3;6 пра­вая круг­лая скоб­ка \cup левая круг­лая скоб­ка 6; плюс бес­ко­неч­ность пра­вая круг­лая скоб­ка ."></p>
+
+        </div>
+        <br> Задание 8: <br>
+        Найдите все значения a, при которых уравнение   <img src="https://ege.sdamgia.ru/formula/svg/ac/acb9f556b1de04a28a26f330f09d1fb0.svg" class="tex" style="vertical-align:-3.6pt" alt=" левая круг­лая скоб­ка x в квад­ра­те минус x минус a пра­вая круг­лая скоб­ка в квад­ра­те =2x в сте­пе­ни 4 плюс 2 левая круг­лая скоб­ка x плюс a пра­вая круг­лая скоб­ка в квад­ра­те ">
+        <br>
+        имеет единственное решение на отрезке [0; 2] <br>
+         <button class="btn btn-primary mt-3" onclick="toggleText('hiddenText9')">Показать решение</button>
+        <div id="hiddenText9" style="display: none;">
+            Ответ:  <img src="https://ege.sdamgia.ru/formula/svg/13/130867e63843204bf00c89de14a16e02.svg" class="tex" style="vertical-align:-8.5pt" alt=" минус дробь: чис­ли­тель: 1, зна­ме­на­тель: 8 конец дроби ; левая круг­лая скоб­ка 0;6 пра­вая квад­рат­ная скоб­ка .">
+        </div>
+        <br>
+        Задание 9: <br>  Найдите все значения a, при которых уравнение <img src="https://ege.sdamgia.ru/formula/svg/4d/4d12544fb80c8e5a69b7418e3039bf98.svg" class="tex" style="vertical-align:-9.3pt" alt=" дробь: чис­ли­тель: x в квад­ра­те минус 2x плюс a в квад­ра­те минус 4a, зна­ме­на­тель: x в квад­ра­те минус a конец дроби =0 ">
+        <br> имеет ровно два различных решения <br>     <button class="btn btn-primary mt-3" onclick="toggleText('hiddenText8')">Показать решение</button>
+        <br>Задание 10: <br>
+        Найдите все значения a, при которых уравнение <img src="https://ege.sdamgia.ru/formula/svg/ba/ba8ec46c03b461935b41faea04b57037.svg" class="tex" style="vertical-align:-9.3pt" alt=" дробь: чис­ли­тель: 2a минус x в квад­ра­те минус 3x, зна­ме­на­тель: x плюс a в квад­ра­те конец дроби =0 ">
+        <br> имеет ровно два различных корня. <br>
+        <button class="btn btn-primary mt-3" onclick="toggleText('hiddenText9')">Показать решение</button>
+        <br>
+         Задание 11: <br> Решите уравнение
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>a</mi>
+            <mi>x</mi>
+            <mo>+</mo>
+            <msup>
+                <mi>a</mi>
+                <mn>2</mn>
+            </msup>
+            <mo>=</mo>
+            <mn>4</mn>
+        </math>
+        при всех значениях параметра
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>a</mi>
+        </math>
+        <br>
+        <button class="btn btn-primary mt-3" onclick="toggleText('hiddenText4')">Показать решение</button>
+        <br>
+        Задание 12 <br>
+            Решите уравнение при всех значениях параметра a:
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mo stretchy="false">(</mo>
+                <msup>
+                    <mi>a</mi>
+                    <mn>2</mn>
+                </msup>
+                <mo>+</mo>
+                <mi>a</mi>
+                <mo stretchy="false">)</mo>
+                <mi>x</mi>
+                <mo>&#x2212;<!-- − --></mo>
+                <mn>2</mn>
+                <msup>
+                    <mi>a</mi>
+                    <mn>4</mn>
+                </msup>
+                <mo>=</mo>
+                <mn>3</mn>
+                <mi>x</mi>
+
+            </math>
+            <button class="btn btn-primary mt-3" onclick="toggleText('hiddenText1')">Показать решение</button>
+        <br>
+        Задание 13
+        Решите уравнение
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>a</mi>
+            <mi>x</mi>
+            <mo>+</mo>
+            <mn>623</mn>
+            <mo>=</mo>
+            <mn>0</mn>
+        </math>
+        при всех значениях
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>a</mi>
+        </math>
+        <br>
+        <button class="btn btn-primary mt-3" onclick="toggleText('hiddenText3')">Показать решение</button>
+        <br>
+        <br>
+        Задание 14
+        Решите уравнение
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>5</mi>
+            <mi>a</mi>
+            <mo>+</mo>
+            <mn>43</mn>
+            <mo>=</mo>
+            <mn>x</mn>
+        </math>
+        при всех значениях
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>a</mi>
+        </math>
+        <br>
+        <button class="btn btn-primary mt-3" onclick="toggleText('hiddenText3')">Показать решение</button>
+        <br>
+        <br>
+        Задание 15
+        Решите уравнение
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>65</mi>
+            <mi>a</mi>
+            <mo>*</mo>
+            <mn>x</mn>
+            <mo>=</mo>
+            <mi>12</mi>
+            <mi>x</mi>
+            <mo>+</mo>
+             <mn>4</mn>
+        </math>
+        при всех значениях
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>a</mi>
+        </math>
+        <br>
+        <button class="btn btn-primary mt-3" onclick="toggleText('hiddenText3')">Показать решение</button>
+        <br>
+        <br>
+        Задание 16
+        Решите уравнение
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>32</mi>
+            <mi>x</mi>
+            <mo>+</mo>
+            <mi>64</mi>
+            <mi>a</mi>
+            <mo>=</mo>
+            <mn>25</mn>
+        </math>
+        при всех значениях
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>a</mi>
+        </math>
+        <br>
+        <button class="btn btn-primary mt-3" onclick="toggleText('hiddenText3')">Показать решение</button>
+
+        <br>
+        <br>
+        Задание 17
+        Решите уравнение
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>a</mi>
+            <mi>x</mi>
+            <mo>+</mo>
+            <mi>4</mi>
+            <mi>x</mi>
+            <mo>=</mo>
+            <mi>80</mi>
+            <mi>ax</mi>
+        </math>
+        при всех значениях
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>a</mi>
+        </math>
+        <br>
+        <button class="btn btn-primary mt-3" onclick="toggleText('hiddenText3')">Показать решение</button>
+
+
+        </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script>
+    function toggleText(elementId) {
+        var hiddenText = document.getElementById(elementId);
+        hiddenText.style.display = (hiddenText.style.display === 'none' || hiddenText.style.display === '') ? 'block' : 'none';
+    }
+</script>
+
+</html>
+{% endblock %}

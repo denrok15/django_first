@@ -7,8 +7,12 @@ class User(AbstractUser):
 
 
 # Create your models here.
-class Contr(models.Model):
-    name = models.CharField('Ваш ответ',max_length=10,blank=True)
-    otvet = models.CharField('Ответ', max_length=10)
+class UserProfile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    grade = models.IntegerField(default=10)
+    avatar = models.ImageField(upload_to='avatars/', default='default_avatar.jpg')
+    email = models.TextField(null=True, blank=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
     def __str__(self):
-        return self.otvet
+        return self.user.username
