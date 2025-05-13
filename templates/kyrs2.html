@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Решу ЕГЭ!
+{% endblock %}
+{% block content %}
+<h1 class="text-center p-2">Линейные конструкци</h1>
+    <div class="p-5 container">
+        <div class="row">
+            <div class="col">
+                <div class="card border-warning card-hover">
+                    <div class="card-body text-center">
+                        <h3 class="position-relative text-center fw-bold">Теория</h3>
+                        <p class = "text-white">dsadsadasda</p>
+                        <img src="   https://cdn-icons-png.flaticon.com/512/1465/1465053.png " width="256" height="256" alt="" title="" class="img-small">
+                        <p class = "text-white">dsadsadasda</p>
+                        <a href="{% url 'lnteor' %}" class="btn btn-warning"><h5>Смотреть курс</h5></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-warning card-hover">
+                    <div class="card-body text-center">
+                        <h3 class="position-relative text-center fw-bold p-0">Практика</h3>
+                        <p class = "text-white">dsadsadasda</p>
+                        <img  src="   https://cdn-icons-png.flaticon.com/512/5363/5363325.png " width="256" height="256" alt="" title="" class = "rounded-1">
+                        <p class = "text-white">dsadsadasda</p>
+
+                        <a href="{% url 'lnprac' %}" class="btn btn-warning"><h5>Смотреть курс</h5></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-warning card-hover">
+                    <div class="card-body text-center">
+                        <h3 class="position-relative text-center fw-bold">Проверь себя</h3>
+                        <p class = "text-white">dsadsadasda</p>
+                        <img src="https://cdn-icons-png.flaticon.com/512/4090/4090353.png" width="256" height="256" alt="Математика бесплатно иконка" title="Математика бесплатно иконка">
+
+                        <p class = "text-white">dsadsadasda</p>
+                        <a href="cont/ln.html" class="btn btn-warning"><h5>Смотреть курс</h5></a>
+                    </div>
+                </div>
+            </div>
+
+
+</body>
+{% endblock %}

@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Решу ЕГЭ!
+{% endblock %}
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center">Прямая пропорциональность</h1>
+    <div class="row mt-4 fw-semibold fs-5 ">
+        <div class="col-md-6 p-2">
+            <h2 class="text-center">Определение</h2>
+            <ul>
+                <li>Функция прямой пропорциональности имеет вид <em>y = kx + b</em>, где <em>k</em> и <em>b</em> - коэффициенты.</li>
+                 <li>График функции - прямая линия в плоскости (x, y).</li>
+                 <li>Нули функции - точка (0, <em>b</em>).</li>
+                <li>Прямая проходит через начало координат, если <em>b = 0</em>.</li>
+                <li>Функция является нечетной, если <em>k</em> нечетное число; и четной, если <em>k</em> четное.</li>
+            </ul>
+        </div>
+        <div class="col-md-6 p-2">
+            <h2 class="text-center">Свойства</h2>
+            <ul >
+                <li>Область определения - все действительные числа (<em>x</em> принимает любые значения).</li>
+                <li>Область значений - все действительные числа (<em>y</em> принимает любые значения).</li>
+                <li>Промежутки возрастания - при <em>k > 0</em>, функция возрастает; при <em>k < 0</em>, функция убывает.</li>
+                <li>Промежутки убывания - при <em>k > 0</em>, функция убывает; при <em>k < 0</em>, функция возрастает.</li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <h2  class="text-center">График прямой пропорциональности</h2>
+        <div id="plot" style="width:100%; height:400px;"></div>
+    </div>
+</div>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+    function linearFunction(x, k, b) {
+        return k * x + b;
+    }
+
+    var xValues = Array.from({ length: 100 }, (_, i) => (i === 50) ? 0 : (i / 10 - 5)); // x от -5 до 5, исключая 0
+    var k1 = 1, b1 = 0;
+    var k2 = -1, b2 = 2;
+
+    var yValues1 = xValues.map(x => linearFunction(x, k1, b1));
+    var yValues2 = xValues.map(x => linearFunction(x, k2, b2));
+
+    var trace1 = {
+        x: xValues,
+        y: yValues1,
+        type: 'scatter',
+        mode: 'lines',
+        name: 'y = x'
+    };
+
+    var trace2 = {
+        x: xValues,
+        y: yValues2,
+        type: 'scatter',
+        mode: 'lines',
+        name: 'y = -x + 2'
+    };
+
+    var layout = {
+        title: 'Разновидности y = kx',
+        xaxis: {
+            title: 'x'
+        },
+        yaxis: {
+            title: 'y'
+        }
+    };
+
+    Plotly.newPlot('plot', [trace1, trace2], layout);
+</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Решу ЕГЭ!
+{% endblock %}
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center">Логарифмическая функция</h1>
+    <div class="row mt-4 fw-semibold">
+        <div class="col-md-6">
+            <h2 class="text-center">Определение</h2>
+            <p>Логарифмическая функция имеет вид <em>y = \log(x)</em>, где <em>x > 0</em>.</p>
+        </div>
+        <div class="col-md-6">
+            <h2 class="text-center">Свойства</h2>
+            <ul>
+                <li>График функции - график логарифма в плоскости (x, y).</li>
+                <li>Область определения - \(x > 0\).</li>
+                <li>Область значений - все действительные числа.</li>
+                <li>Нули функции - нет нулей, так как \(\log(x)\) не определен при \(x \leq 0\).</li>
+                <li>Промежутки возрастания - функция возрастает при \(x > 1\).</li>
+                <li>Промежутки убывания - функция убывает при \(0 < x < 1\).</li>
+                <li>Функция является нечетной.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <h2>График</h2>
+        <div id="plot" style="width:100%; height:400px;"></div>
+    </div>
+
+    <div class="mt-4">
+        <h2>Влияние коэффициента b</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Изменение коэффициента b</h3>
+                <div id="plotB" style="width:100%; height:400px;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+    function logarithmicFunction(x) {
+        return Math.log(x);
+    }
+
+    var xValues = Array.from({ length: 100 }, (_, i) => (i === 0) ? 0.1 : i / 10); // x от 0.1 до 10
+
+    var yValues = xValues.map(x => logarithmicFunction(x));
+
+    var trace = {
+        x: xValues,
+        y: yValues,
+        type: 'scatter',
+        mode: 'lines',
+        name: 'y = \\log(x)'
+    };
+
+    var layout = {
+        title: 'График логарифмической функции',
+        xaxis: {
+            title: 'x'
+        },
+        yaxis: {
+            title: 'y'
+        }
+    };
+
+    Plotly.newPlot('plot', [trace], layout);
+
+    // Влияние коэффициента b
+    var bValues = [1, 2, 3];
+
+    var traceB = bValues.map(bVal => ({
+        x: xValues,
+        y: xValues.map(x => logarithmicFunction(x) + bVal),
+        type: 'scatter',
+        mode: 'lines',
+        name: 'y = \\log(x) + ' + bVal
+    }));
+
+    Plotly.newPlot('plotB', traceB, layout);
+</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+{% endblock %}

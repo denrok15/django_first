@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Решу ЕГЭ!
+{% endblock %}
+{% block content %}
+
+<div class="container mt-5">
+    <h1 class="text-center">Графики тригонометрических функций</h1>
+    <div class="mt-4 fw-semibold ">
+        <h2 class="text-center">График функции sin(x)</h2>
+        <div id="sin-plot" style="width:100%; height:400px;"></div>
+        <h2 class="text-center">Свойства функции sin(x):</h2>
+        <div class="row mt-4 ">
+            <div class="col-md-6">
+                <ul>
+                    <li>Область определения: (-∞, ∞)</li>
+                    <li>Область значений: [-1, 1]</li>
+                    <li>Нули функции: kπ, где k - целое число</li>
+                    <li>Промежутки возрастания: [2kπ, (2k+1)π], где k - целое число</li>
+
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul>
+                    <li>Промежутки убывания: [(2k+1)π, (2k+2)π], где k - целое число</li>
+                    <li>Периодичность: 2π</li>
+                    <li>Симметрия относительно начала координат</li>
+                    <li>Функция нечетная</li>
+                </ul>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="mt-4">
+        <h2 class="text-center">График функции cos(x)</h2>
+        <div id="cos-plot" style="width:100%; height:400px;"></div>
+        <h2 class="text-center">Свойства функции cos(x):</h2>>
+        <div class="row mt-4 fw-semibold">
+            <div class="col-md-6">
+                <ul>
+                    <li>Область определения: (-∞, ∞)</li>
+                    <li>Область значений: [-1, 1]</li>
+                    <li>Нули функции: (2k+1)π/2, где k - целое число</li>
+                    <li>Промежутки возрастания: [2kπ, (2k+1)π], где k - целое число</li>
+
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul>
+                    <li>Промежутки убывания: [(2k+1)π, (2k+2)π], где k - целое число</li>
+                    <li>Периодичность: 2π</li>
+                    <li>Симметрия относительно оси ординат</li>
+                    <li>Функция четная</li>
+                </ul>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="mt-4">
+        <h2 class="text-center">График функции tan(x)</h2>
+        <div id="tan-plot" style="width:100%; height:400px;"></div>
+        <h2 class="text-center">Свойства функции tan(x):</h2>
+        <div class="row mt-4 fw-semibold">
+            <div class="col-md-6">
+                <ul>
+                    <li>Область определения: (-∞, ∞), x ≠ (2k+1)π/2, где k - целое число</li>
+                    <li>Область значений: (-∞, ∞)</li>
+                    <li>Нули функции: kπ, где k - целое число</li>
+                    <li>Промежутки возрастания: (kπ, (k+1)π), где k - целое число</li>
+
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul>
+                    <li>Промежутки убывания: ((k+1)π, (k+2)π), где k - целое число</li>
+                    <li>Периодичность: π</li>
+                    <li>Вертикальные асимптоты при значениях (2k+1)π/2, где k - целое число</li>
+                    <li>Функция нечетная</li>
+
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+    function sinFunction(x) {
+        return Math.sin(x);
+    }
+
+    function cosFunction(x) {
+        return Math.cos(x);
+    }
+
+    function tanFunction(x) {
+        return Math.tan(x);
+    }
+
+    var xValues = Array.from({length: 500}, (_, i) => i / 50 - 5);
+
+    var sinValues = xValues.map(x => sinFunction(x));
+    var cosValues = xValues.map(x => cosFunction(x));
+    var tanValues = xValues.map(x => tanFunction(x));
+
+    var sinTrace = {
+        x: xValues,
+        y: sinValues,
+        type: 'scatter',
+        mode: 'lines',
+        name: 'sin(x)'
+    };
+
+    var cosTrace = {
+        x: xValues,
+        y: cosValues,
+        type: 'scatter',
+        mode: 'lines',
+        name: 'cos(x)'
+    };
+
+    var tanTrace = {
+        x: xValues,
+        y: tanValues,
+        type: 'scatter',
+        mode: 'lines',
+        name: 'tan(x)'
+    };
+
+    var layout = {
+        title: 'Графики тригонометрических функций',
+        xaxis: {
+            title: 'x'
+        },
+        yaxis: {
+            title: 'y'
+        }
+    };
+
+    Plotly.newPlot('sin-plot', [sinTrace], layout);
+    Plotly.newPlot('cos-plot', [cosTrace], layout);
+    Plotly.newPlot('tan-plot', [tanTrace], layout);
+</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,190 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Свойства
+{% endblock %}
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Математика: Свойства степени и логарифма</h1>
+    <div class="card mb-4 ">
+        <div class="card-header">
+            <h2>Свойства степени</h2>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">1. Произведение степеней с одинаковым основанием</h5>
+            <p class="card-text">Если a - положительное число, то a<sup>m</sup> * a<sup>n</sup> = a<sup>m+n</sup>.</p>
+
+            <h5 class="card-title">2. Деление степеней с одинаковым основанием</h5>
+            <p class="card-text">Если a - положительное число, то a<sup>m</sup> / a<sup>n</sup> = a<sup>m-n</sup>.</p>
+
+            <h5 class="card-title">3. Возведение в степень степени</h5>
+            <p class="card-text">Если a - положительное число, то (a<sup>m</sup>)<sup>n</sup> = a<sup>m * n</sup>.</p>
+
+            <h5 class="card-title">4. Степень числа 1</h5>
+            <p class="card-text">Любое число, возведенное в степень 0, равно 1: a<sup>0</sup> = 1 (при условии a ≠ 0).
+            </p>
+
+            <h5 class="card-title">5. Степень с отрицательным показателем</h5>
+            <p class="card-text">Если a - положительное число и n - отрицательное число, то a<sup>n</sup> =
+                1/a<sup>|n|</sup>.</p>
+
+            <h5 class="card-title">6. Степень равна 1</h5>
+            <p class="card-text">Любое число, возведенное в степень 1, равно самому себе: a<sup>1</sup> = a.</p>
+
+            <h5 class="card-title">7. Возведение в степень числителя и знаменателя</h5>
+            <p class="card-text">Если a и b - положительные числа, то (a/b)<sup>n</sup> = a<sup>n</sup> / b<sup>n</sup>.
+            </p>
+        </div>
+    </div>
+    <div class="card mb-4">
+        <div class="card-header">
+            <h2>Свойства логарифма</h2>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">1. Определение логарифма</h5>
+            <p class="card-text">Логарифм числа b по основанию a, обозначаемый log<sub>a</sub>(b), равен степени, в
+                которую нужно возвести a, чтобы получить b.</p>
+
+            <h5 class="card-title">2. Свойство логарифма от произведения</h5>
+            <p class="card-text">log<sub>a</sub>(xy) = log<sub>a</sub>(x) + log<sub>a</sub>(y).</p>
+
+            <h5 class="card-title">3. Свойство логарифма от частного</h5>
+            <p class="card-text">log<sub>a</sub>(x/y) = log<sub>a</sub>(x) - log<sub>a</sub>(y).</p>
+
+            <h5 class="card-title">4. Свойство логарифма от степени</h5>
+            <p class="card-text">log<sub>a</sub>(x<sup>n</sup>) = n * log<sub>a</sub>(x).</p>
+
+            <h5 class="card-title">5. Свойство логарифма от числа 1</h5>
+            <p class="card-text">log<sub>a</sub>(1) = 0, независимо от основания логарифма a.</p>
+
+            <h5 class="card-title">6. Свойство логарифма от основания</h5>
+            <p class="card-text">log<sub>a</sub>(a) = 1, где a - положительное число и a ≠ 1.</p>
+
+            <h5 class="card-title">7. Свойство смены основания логарифма</h5>
+            <p class="card-text">log<sub>a</sub>(b) = log<sub>c</sub>(b) / log<sub>c</sub>(a), где a, b, и c -
+                положительные числа, и c ≠ 1.</p>
+        </div>
+    </div>
+    <div class="card mb-4">
+        <div class="card-header">
+            <h2>Свойства корня</h2>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">1. Определение корня</h5>
+            <p class="card-text">Корень степени n из числа a, обозначаемый как √<sub>n</sub>(a), равен такому
+                положительному числу x, что x<sup>n</sup> = a.</p>
+
+            <h5 class="card-title">2. Свойство корня от произведения</h5>
+            <p class="card-text">√<sub>n</sub>(ab) = √<sub>n</sub>(a) * √<sub>n</sub>(b).</p>
+
+            <h5 class="card-title">3. Свойство корня от частного</h5>
+            <p class="card-text">√<sub>n</sub>(a/b) = √<sub>n</sub>(a) / √<sub>n</sub>(b), при условии, что
+                √<sub>n</sub>(b) ≠ 0.</p>
+
+            <h5 class="card-title">4. Свойство корня от степени</h5>
+            <p class="card-text">√<sub>n</sub>(a<sup>m</sup>) = a<sup>m/n</sup>, где m - целое число, а n - натуральное
+                число, и m/n - дробь в простейшем виде.</p>
+
+            <h5 class="card-title">5. Свойство корня от числа 1</h5>
+            <p class="card-text">√<sub>n</sub>(1) = 1, независимо от значения n.</p>
+
+            <h5 class="card-title">6. Свойство корня от отрицательного числа</h5>
+            <p class="card-text">Корень неопределенного порядка из отрицательного числа не является вещественным числом
+                (в общем случае).</p>
+
+            <h5 class="card-title">7. Свойство корня от нуля</h5>
+            <p class="card-text">√<sub>n</sub>(0) = 0, независимо от значения n.</p>
+        </div>
+    </div>
+    <div class="card mb-4">
+        <div class="card-header">
+            <h2>Формулы сокращенного умножения</h2>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">1. Квадрат суммы двух чисел</h5>
+            <p class="card-text">(a + b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup>.</p>
+
+            <h5 class="card-title">2. Квадрат разности двух чисел</h5>
+            <p class="card-text">(a - b)<sup>2</sup> = a<sup>2</sup> - 2ab + b<sup>2</sup>.</p>
+
+            <h5 class="card-title">3. Разность квадратов</h5>
+            <p class="card-text">a<sup>2</sup> - b<sup>2</sup> = (a + b)(a - b).</p>
+
+            <h5 class="card-title">4. Куб суммы двух чисел</h5>
+            <p class="card-text">(a + b)<sup>3</sup> = a<sup>3</sup> + 3a<sup>2</sup>b + 3ab<sup>2</sup> + b<sup>3</sup>.
+            </p>
+
+            <h5 class="card-title">5. Куб разности двух чисел</h5>
+            <p class="card-text">(a - b)<sup>3</sup> = a<sup>3</sup> - 3a<sup>2</sup>b + 3ab<sup>2</sup> - b<sup>3</sup>.
+            </p>
+
+            <h5 class="card-title">6. Сумма кубов двух чисел</h5>
+            <p class="card-text">a<sup>3</sup> + b<sup>3</sup> = (a + b)(a<sup>2</sup> - ab + b<sup>2</sup>).</p>
+
+            <h5 class="card-title">7. Разность кубов двух чисел</h5>
+            <p class="card-text">a<sup>3</sup> - b<sup>3</sup> = (a - b)(a<sup>2</sup> + ab + b<sup>2</sup>).</p>
+        </div>
+    </div>
+    <div class="card mb-4">
+        <div class="card-header">
+            <h2>Тригонометрическая окружность и формулы</h2>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Тригонометрическая окружность</h5>
+            <p class="card-text">На рисунке ниже представлена тригонометрическая окружность с углами и их
+                значениями:</p>
+            <img src="https://i.stack.imgur.com/O2WQW.jpg" alt="">
+
+            <h5 class="card-title mt-4">Основные формулы из тригонометрии</h5>
+            <p class="card-text">Пусть a - угол в радианах:</p>
+            <ul>
+                <li>Sin(a) = противоположная сторона / гипотенуза</li>
+                <li>Cos(a) = прилежащая сторона / гипотенуза</li>
+                <li>Tan(a) = противоположная сторона / прилежащая сторона</li>
+                <li>Cot(a) = прилежащая сторона / противоположная сторона</li>
+                <li>Sec(a) = гипотенуза / прилежащая сторона</li>
+                <li>Csc(a) = гипотенуза / противоположная сторона</li>
+            </ul>
+            <p class="card-text">Дополнительные формулы:</p>
+            <ul>
+                <li>Sin<sup>2</sup>(a) + Cos<sup>2</sup>(a) = 1</li>
+                <li>Tan(a) = Sin(a) / Cos(a)</li>
+                <li>Cot(a) = 1 / Tan(a)</li>
+                <li>Sin(2a) = 2 * Sin(a) * Cos(a)</li>
+                <li>Cos(2a) = Cos<sup>2</sup>(a) - Sin<sup>2</sup>(a)</li>
+                <li>Tan(a) * Cot(a) = 1</li>
+                <li>1 + Tan<sup>2</sup>(a) = Sec<sup>2</sup>(a)</li>
+                <li>1 + Cot<sup>2</sup>(a) = Csc<sup>2</sup>(a)</li>
+                <li>Sin(a ± b) = Sin(a) * Cos(b) ± Cos(a) * Sin(b)</li>
+                <li>Cos(a ± b) = Cos(a) * Cos(b) ∓ Sin(a) * Sin(b)</li>
+                <li>Tan(a ± b) = (Tan(a) ± Tan(b)) / (1 ∓ Tan(a) * Tan(b))</li>
+                <li>Cot(a ± b) = 1 / Tan(a ± b)</li>
+                <li>Sin(2a) = 2 * Sin(a) * Cos(a)</li>
+                <li>Cos(2a) = Cos<sup>2</sup>(a) - Sin<sup>2</sup>(a)</li>
+                <li>Tan(2a) = (2 * Tan(a)) / (1 - Tan<sup>2</sup>(a))</li>
+                <li>Cot(2a) = (Cot<sup>2</sup>(a) - 1) / (2 * Cot(a))</li>
+                <li>Sin<sup>2</sup>(a) = (1 - Cos(2a)) / 2</li>
+                <li>Cos<sup>2</sup>(a) = (1 + Cos(2a)) / 2</li>
+                <li>Tan<sup>2</sup>(a) = (1 - Cos(2a)) / (1 + Cos(2a))</li>
+                <li>Cot<sup>2</sup>(a) = (1 + Cos(2a)) / (1 - Cos(2a))</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
+{% endblock %}
